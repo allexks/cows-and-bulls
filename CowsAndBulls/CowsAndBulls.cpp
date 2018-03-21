@@ -55,8 +55,7 @@ int main()
 			cout << turnCount << ") number: "; cin >> numberAttempt;
 
 		} while (numberAttempt < (int)pow(10, DIGITS - 1) || 
-			numberAttempt >= (int)pow(10, DIGITS) |
-
+			numberAttempt >= (int)pow(10, DIGITS) ||
 			XOR(WITH_REPEATING_DIGITS, intHasRepeatingDigits(numberAttempt, DIGITS))
 		);
 		
